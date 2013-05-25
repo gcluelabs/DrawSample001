@@ -1,4 +1,4 @@
-package com.gclue.DrawSample001;
+package com.example.drawsample001;
 
 import android.app.Activity;
 import android.content.Context;
@@ -13,22 +13,22 @@ public class DrawSample001Activity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-		// ƒNƒ‰ƒX‚ÌƒCƒ“ƒXƒ^ƒ“ƒX‚ğ¶¬
+		// ï¿½Nï¿½ï¿½ï¿½Xï¿½ÌƒCï¿½ï¿½ï¿½Xï¿½^ï¿½ï¿½ï¿½Xï¿½ğ¶ï¿½
 		MyView mView = new MyView( this );
 
-		// View‚Éİ’è
+		// Viewï¿½Éİ’ï¿½
 		setContentView( mView );
 	}
 }
 
 /**
- * •`‰æ—p‚ÌƒNƒ‰ƒXB
+ * ï¿½`ï¿½ï¿½pï¿½ÌƒNï¿½ï¿½ï¿½Xï¿½B
  */
 class MyView extends View {
 
 	/**
-	 * ƒRƒ“ƒXƒgƒ‰ƒNƒ^B
-	 * @param context ƒRƒ“ƒeƒLƒXƒg
+	 * ï¿½Rï¿½ï¿½ï¿½Xï¿½gï¿½ï¿½ï¿½Nï¿½^ï¿½B
+	 * @param context ï¿½Rï¿½ï¿½ï¿½eï¿½Lï¿½Xï¿½g
 	 */
 	public MyView( Context context ) {
 		super( context );
@@ -36,21 +36,21 @@ class MyView extends View {
 	}
 
 	/**
-	 * •`‰æˆ—‚ğs‚¤B
+	 * ï¿½`ï¿½æˆï¿½ï¿½ï¿½ï¿½ï¿½sï¿½ï¿½ï¿½B
 	 */
 	@Override
 	protected void onDraw( Canvas canvas ) {
 		super.onDraw( canvas );
 
-		// ”wŒiF‚ğİ’è
+		// ï¿½wï¿½iï¿½Fï¿½ï¿½İ’ï¿½
 		canvas.drawColor( Color.BLUE );
 
-		// •`‰æ‚·‚é‚½‚ß‚Ìü‚ÌF‚ğİ’è
+		// ï¿½`ï¿½æ‚·ï¿½é‚½ï¿½ß‚Ìï¿½ÌFï¿½ï¿½İ’ï¿½
 		Paint mPaint = new Paint();
 		mPaint.setStyle( Paint.Style.FILL );
 		mPaint.setARGB( 255, 255, 255, 100 );
 
-		// ü‚Å•`‰æ
+		// ï¿½ï¿½Å•`ï¿½ï¿½
 		canvas.drawLine( 0, 0, 50, 50, mPaint );
 	}
 }
